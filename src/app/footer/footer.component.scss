@@ -1,0 +1,19 @@
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    height: 500px;
+
+    box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.2);;
+}
+.centerText {
+ text-align: center;
+
+    }
+    .center{
+        margin: auto;
+        width: 50%;
+    }
+    .inline{
+        display: flex;
+    }
