@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { CardBigScreenComponent } from './card-big-screen/card-big-screen.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResumeComponent } from './resume/resume.component';
+import { EducationCardComponent } from './education-card/education-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     BodyComponent,
     CardBigScreenComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeComponent,
+    EducationCardComponent
   ],
   imports: [
     BrowserModule,
