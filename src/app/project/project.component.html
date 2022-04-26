@@ -8,19 +8,17 @@
     
     </div>
 <div>
-    <div class="center">
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
+    <div class="center" *ngIf="projects">
+        <div style="margin-top: 80px;" *ngFor="let project of projects">
+            <app-project-card 
+            [title]="project.title"
+            [details]="project.details"
+            [imgUrl]="project.imgUrl"
+            [position]="project.position"
+
+            ></app-project-card>
         </div>
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
-        </div>
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
-        </div>
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
-        </div>
+        
 
     </div>
 </div>

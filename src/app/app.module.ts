@@ -9,6 +9,8 @@ import { CardBigScreenComponent } from './card-big-screen/card-big-screen.compon
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { EducationCardComponent } from './education-card/education-card.component';
+import { ProjectComponent } from './project/project.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { EducationCardComponent } from './education-card/education-card.componen
     CardBigScreenComponent,
     FooterComponent,
     ResumeComponent,
-    EducationCardComponent
+    EducationCardComponent,
+    ProjectComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
