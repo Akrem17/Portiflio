@@ -8,19 +8,18 @@
     
     </div>
 <div>
-    <div class="center">
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
+    <div class="center" *ngIf="educations.length>0">
+        <div style="margin-top: 80px;" *ngFor="let education of educations">
+            <app-education-card 
+            [date]="education.date"
+            [city]="education.city"
+            [college]="education.college"
+            [details]="education.details"
+            [field]="education.field"
+
+            ></app-education-card>
         </div>
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
-        </div>
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
-        </div>
-        <div style="margin-top: 80px;">
-            <app-education-card></app-education-card>
-        </div>
+      
 
     </div>
 </div>
@@ -34,22 +33,16 @@
 </div>
 <div>
 <div class="center">
-    <div style="margin-top: 80px;">
-        <app-education-card></app-education-card>
+    <div style="margin-top: 80px;" *ngFor="let work of works">
+        <app-education-card
+            [position]="work.position"
+            [company]="work.company"
+            [college]="work.date"
+            [details]="work.details"
+            [field]="work.city"
+        ></app-education-card>
     </div>
-    <div style="margin-top: 80px;">
-        <app-education-card></app-education-card>
-    </div>
-    <div style="margin-top: 80px;">
-        <app-education-card></app-education-card>
-    </div>
-    <div style="margin-top: 80px;">
-        <app-education-card></app-education-card>
-    </div>
-
-<!-- gfh --> <!-- gfh --> <!-- gfh -->
-<!-- gfh --> <!-- gfh --> <!-- gfh -->
-<!-- gfh --> <!-- gfh --> <!-- gfh -->
+  
 
 <div id="block_container" style="margin:100px 0px 100px 0px ">
     <div id="bloc1"><div class="square"></div></div>
@@ -121,7 +114,12 @@
       
 </div>
 </div>
-</div>
+<br><br>
 <div class="center" style="text-align: center;">
-    <button class="center">Download CV</button>
+    <button mat-button>Download CV </button>
+    <button mat-button style="margin-left:'10px'" >See LinkedIn </button>
+
+    
+</div>
+<br><br>
 </div>

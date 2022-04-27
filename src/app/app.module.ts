@@ -11,6 +11,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { EducationCardComponent } from './education-card/education-card.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
