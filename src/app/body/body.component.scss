@@ -5,8 +5,9 @@
 
 
 .bodyMin{
-    background: linear-gradient(to bottom, #fff 45% ,#fff 40%,#e6dace 40%) ; 
+    background: linear-gradient(to bottom, #fff 30% ,#fff 40%,#e6dace 40%) ; 
     min-height: 1000px;
+    padding: 10px;
 }
 .aboutMin{
     tab-size: 0 !important;
@@ -16,6 +17,7 @@
     letter-spacing: 2px;
     color: #000;
     margin-top: 40px;
+    width: 90%;
 }
 
 .helloMin{
@@ -38,10 +40,10 @@
     margin-top: 40px;
 
     font-family: 'Poppins', sans-serif;
-    font-weight: 200 !important;
+    font-weight: 700 !important;
     line-height: 25px;
     color: #000;
-    font-size: 30px;
+    font-size: 25px;
 
     
 }
