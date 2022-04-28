@@ -1,8 +1,8 @@
-<!-- <nav class="navbar sticky" >
+<div  [ngClass]="displayOn" >
+<nav class="navbar sticky" >
     <div class="logo">
         <div id="block_container">
-            <div id="bloc1"><div class="square"></div></div>
-            <div id="bloc2"><span class="name">Akrem Hammami</span><span class="job">/software egnineer</span></div>
+            <div id="bloc2"><span class="name"><p> &nbsp;Akrem Hammami</p></span><span class="job">/software egnineer</span></div>
           </div>      
      <div>
     </div>
@@ -18,35 +18,36 @@
 
     </div>
     </ul>
-    </nav> -->
-
+    </nav>
+</div>
+<div [ngClass]="displayOff" >
     <nav class="navbarMin" >
         <div class="logo">
             <div id="block_containerMin">
                 <div id="bloc1"><div class="square"></div></div>
-                <div id="bloc2"><span class="nameMin">Akrem Hammami</span></div>
-                <div id="bloc2">    <span class="jobMin">software egnineer</span></div>
- 
+                <div id="bloc2"><span class="nameMin">Akrem Hammami</span></div><br>
+                <div id="bloc2"><span class="jobMin">software egnineer</span></div>
             </div>
             
          <div>
         </div>
          </div>
-        <!-- NAVIGATION MENU -->
         <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
         <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
+        <label for="checkbox_toggle" class="hamburger">
+            <span  >&#9776;</span> 
+
+         </label>
+        <div class="menu" >
+            <ul class="menuMin">
         <li><a href="/">About me</a></li>
         <li><a href="/resume">Resume</a></li>
         <li><a href="/projects">Project</a></li>
         <li><a href="/">Contact</a></li>
-    
+    </ul>
         </div>
         </ul>
         </nav>
     
 
-    
+    </div>

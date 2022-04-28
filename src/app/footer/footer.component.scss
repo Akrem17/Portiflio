@@ -3,6 +3,12 @@
     display: grid;
     grid-template-columns: 6fr 6fr;
 
+    box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.2);
+}
+.wrapperMin{
+    display: grid;
+    grid-template-columns: 6fr ;
+    font-size: 20px;
     box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.2);;
 }
 .centerText {
@@ -16,3 +22,13 @@
     .inline{
         display: flex;
     }
+
+.centerMin{
+    margin: 20px;
+}
+.detailsMin{
+    padding: 20px;
+}
+.displayOff{
+    display: none;
+}

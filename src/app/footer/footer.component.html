@@ -1,4 +1,5 @@
-<!-- <footer class="wrapper " style="padding: 80px 0px 80px 30px;">
+<div  [ngClass]="displayOn" >
+<footer class="wrapper " style="padding: 80px 0px 80px 30px;">
 
     <div >
         © 2022 by Akrem Hammami.
@@ -24,4 +25,35 @@
         </div>
     </div>
     </div>
-    </footer> -->
+    </footer>
+</div>
+<div  [ngClass]="displayOff" >
+    <footer class="wrapperMin " style="padding: 30px 0px 80px 30px;">
+
+        
+        <div>
+            <div class="inlineMin">
+            <div class="centerMin centerTextMin">
+                Call
+                <br>+21628274222
+            </div>
+            <div class="centerMin centerTextMin">
+                Email
+                <br>akremhammami@outlook.com
+            </div>
+            <div class="centerMin centerTextMin">
+                Follow
+                <br> <br>
+                <a  href="#" style="margin-right: 10px;"> <i class="fab fa-linkedin-in"></i></a>
+                <a href="#"  style="margin: 10px;" ><i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="#"  style="margin: 10px; "> <i class="fab fa-instagram"></i></a>
+                 
+            </div>
+        </div>
+        </div>
+        <div class="centerMin">
+            © 2022 by Akrem Hammami.
+        </div>
+        </footer>
+    </div>
