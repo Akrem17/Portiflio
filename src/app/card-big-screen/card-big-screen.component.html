@@ -1,5 +1,8 @@
-    <div class="center" >
-    <div class="wrapper ">
+    <div [ngClass]="displayOn">
+
+
+    <div  [ngClass]="myClass" >
+    <div [ngClass]="wrapper">
         <div class="grid1 " style="text-align: center;">
                 <div class="img">
                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/RBZK7Mg/download-edited.webp" alt="download-edited" border="0"></a>
@@ -9,7 +12,7 @@
                        <div> Hammami</div>
 
                 </div>
-                <hr>
+                <hr class="hr">
                 <div class="job ">
                     <div class="">
                     <span>Software</span><br>
@@ -19,21 +22,22 @@
                     <span>Engineer</span><br>
                          
                 </div>
+                
                 </div>
                 <div class="footer ">
-                   <a  href="#" style="margin: 10px;"> <i class="fab fa-linkedin-in"></i></a>
-                   <a href="#"  style="margin: 10px;" ><i class="fa fa-github" aria-hidden="true"></i>
-                   </a>
-                   <a href="#"  style="margin: 10px; "> <i class="fab fa-instagram"></i></a>
-                    
-                </div>
+                    <a  href="#" style="margin: 10px;"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"  style="margin: 10px;" ><i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"  style="margin: 10px; "> <i class="fab fa-instagram"></i></a>
+                     
+                 </div>
         </div>
         <div class="grid2" >
             <div class="hello"> <span>Hello</span></div>
             <div class="welcome">Welcome to my portfolio </div>
             <div class="btn">
-                <button class="resume ">RESUME(CV)</button>
-                <button class="projects">PROJECTS</button>
+                <button class="resume button">RESUME(CV)</button>
+                <button class="projects button">PROJECTS</button>
             </div>
             <div class="about">
                             
@@ -44,4 +48,38 @@
             </div>
         </div>
     </div>
+</div>
+    </div>
+<div [ngClass]="displayOff">
+
+
+<div class="bodyMin centerMin">
+    <div class="cardMin centerMin">
+        <div>
+            <div >
+                <a><img class="imgMin " src="https://i.ibb.co/RBZK7Mg/download-edited.webp" width="150px" ></a>
+             </div>
+           <span class="nameMin"> Akrem <br>Hammami</span>  
+           <hr class="hrMin">  
+           <div class="buttonsMin">
+            <button class="resume">Resume</button>
+            <div class="spacing"></div>
+            <button  class="projectsMin">Projects</button>
+           </div>
+        
+       
+        
+        </div>
+        <div style="padding: 0;" class="socialCardMin ">
+        
+            <a  href="#"> <i class="fab fa-linkedin-in icon"></i></a>
+            <a href="#"  ><i class="fa fa-github icon" aria-hidden="true"></i>
+            </a>
+            <a href="#" > <i class="fab fa-instagram icon"></i></a>
+             
+         </div>
+        </div>
+    
+</div>
+
 </div>

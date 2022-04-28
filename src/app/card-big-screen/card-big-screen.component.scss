@@ -1,7 +1,6 @@
 
 img {
     border-radius: 50%;
-    margin-bottom: 30px;
   }
 .center {
     margin: auto;
@@ -20,6 +19,8 @@ img {
 }
 .img{
     margin-top: 50px;
+    margin-bottom: 30px;
+
 }
 .grid1{
     grid-column: 1/2 ;
@@ -33,7 +34,7 @@ img {
     grid-row: 1;
     background-color: white !important;
 }
-hr{
+.hr{
     width:15%;
     margin:0 auto;
       position: relative;
@@ -103,7 +104,7 @@ hr{
     border-color: #0050ff;
     
 }
-button{
+.button{
     background-color: white;
     border-radius:50px;
     padding: 5px 30px 5px 30px;
@@ -137,4 +138,116 @@ button{
     color: #000;
     max-width: 80%;
 
+}
+.displayHr{
+    display: block;
+}
+.displayHrMin{
+    display: none;
+}
+
+.centerMin{
+
+}
+.wrapperMin{
+
+}
+
+// @media only screen and (max-width: 768px) {
+    
+//     .center {
+//         margin: auto;
+//         width: 50%;
+    
+//         }
+        
+// .wrapper{
+//     display: block;
+//     grid-template-columns: 4fr 6fr;
+//     height: 50px;
+
+//     box-shadow: 0 -5px 15px -5px rgba(0, 0, 0, 0.2);;
+
+
+
+// }
+
+.buttonsMin {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+
+
+}
+.buttonsMin >button {
+    background-color: #000;
+    color: white;
+    border-radius:50px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+
+
+}
+.centerMin{
+    margin: auto;
+    width: 90%;
+}
+.cardMin{
+    text-align: center;
+    background-color:#f4ece6 ;
+    margin-top: 50px;
+    padding-top: 50px;
+
+}
+.nameMin{
+    font-family: 'Poppins', sans-serif;
+        font-size:25px;
+    font-weight: 700 !important;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: #000;
+    letter-spacing: 2px;
+    margin-right: 5px;
+    
+}
+.imgMin{
+    margin-bottom: 10px;
+}
+.hrMin{
+    width:40%;
+    margin:0 auto;
+      position: relative;
+        top: 20px;
+        border: none;
+        height: 2px;
+        background: #0050ff;
+        margin-bottom: 50px;
+
+}
+
+.projectsMin{
+    background-color: #f4ece6 !important;
+    color: #000 !important;
+
+}
+.socialCardMin{
+    display: block;
+    background-color: white;
+   
+}
+.icon{
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+}
+.bodyMin{
+     text-align: center;
+    background-color:#f4ece6 ;
+    box-shadow: 10px 15px 15px 15px rgba(0, 0, 0, 0.2);;
+}
+
+.displayOff{
+    display:none ;
 }

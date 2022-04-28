@@ -1,6 +1,32 @@
-<div class="body">
+<div [ngClass]="displayOn">
+    <div class="body">
+        
+        <div style="padding-top: 220px;  " >
+        <app-card-big-screen ></app-card-big-screen>
+    </div>
+    </div>
+
+</div>
+
+<div [ngClass]="displayOff">
+<div class="bodyMin">
     
     <div style="padding-top: 220px;  " >
     <app-card-big-screen ></app-card-big-screen>
+
+    <div class="detailsMin" >
+        <div class="helloMin"> <span>Hello</span></div>
+        <div class="welcomeMin">Welcome to my portfolio </div>
+      
+        <div class="aboutMin">
+            
+                        
+        I'm a software engineering students who love 
+        programming, I have been enthusiastic about the computer science world science since I was 16 years old, and that passion led me to study computer science from I was in high school.
+        I aim to work on big projects around the world and turn ideas into real applications.
+                        
+        </div>
+    </div>
 </div>
+</div> 
 </div>
