@@ -1,3 +1,4 @@
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EducationCardComponent implements OnInit {
 
-  constructor() { }
   @Input() date:string | undefined;
   @Input() city:string | undefined;
   @Input() college:string | undefined;
@@ -22,4 +22,25 @@ export class EducationCardComponent implements OnInit {
     console.log(this.date)
   }
 
+
+  displayOn:string="displayOn"
+  displayOff:string="displayOff"
+  
+
+  constructor(    private breakpointObserver: BreakpointObserver) { 
+      this.breakpointObserver.observe([
+        "(max-width: 768px)"
+      ]).subscribe((result: BreakpointState) => {
+        if (result.matches) {
+            
+                this.displayOff=""
+                this.displayOn="displayOff"
+               
+        } else {
+          this.displayOff="displayOff"
+          this.displayOn=""
+
+        }
+    })
+  }
 }

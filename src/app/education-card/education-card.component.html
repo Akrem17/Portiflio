@@ -1,3 +1,4 @@
+<div  [ngClass]="displayOn" >
 <div class="card">
     <div class="grid1">
        <div class="name"> {{date}} {{position}}</div> 
@@ -29,4 +30,41 @@
       </div>
       
     </div>
+</div>
+</div>
+<div  [ngClass]="displayOff" >
+
+<div class="cardMin">
+  <div class="grid1Min">
+     <div class="nameMin"> {{date}} {{position}}</div> 
+      <br><br>
+      <div class="jobMin">
+       <span style="font-size: 15px;"><i *ngIf="!company" class="fa-solid fa-building-columns"></i> 
+        <i *ngIf="company" class="fa-solid fa-calendar-days"></i> {{college}}</span>
+        <br> <br> <br>
+        <span style="font-size: 15px;"> <i   *ngIf="!company" class="fa-solid fa-location-dot"></i> {{city}}
+          <i *ngIf="company" class="fa-solid fa-building-columns"></i>
+          {{company}}</span>
+        <br><br><br>
+        <span style="font-size: 15px;"> 
+           <i  *ngIf="!company" class="fa-solid fa-graduation-cap"></i>
+           <i   *ngIf="company" class="fa-solid fa-location-dot"></i>
+           {{field}}</span>
+           
+    </div>
+  </div>
+ 
+  <div class="grid2Min">
+      <div class="containerMin">
+          <div class="vertical-centerMin">
+            <p class="jobMin"  style="text-align: center;">{{details}}
+          </p>
+          </div>
+        </div>
+    <div class="jobMin">
+
+    </div>
+    
+  </div>
+</div>
 </div>

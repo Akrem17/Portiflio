@@ -1,3 +1,4 @@
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, Input, OnInit } from '@angular/core';
 import { education } from '../shared/models/education';
 import { work } from '../shared/models/work';
@@ -10,7 +11,6 @@ import { work } from '../shared/models/work';
 export class ResumeComponent implements OnInit {
  educations:education[]=[]
  works:work[]=[]
-  constructor() { }
 
   ngOnInit(): void {
     let ed1:education= new education();
@@ -70,6 +70,26 @@ export class ResumeComponent implements OnInit {
     w4.details="Developing a web platform in which French citizens practice democracy by making political decisions with voting, debate, polling, and local election"
     this.works.push(w4)
     
+  }
+  displayOn:string="displayOn"
+  displayOff:string="displayOff"
+  
+
+  constructor(    private breakpointObserver: BreakpointObserver) { 
+      this.breakpointObserver.observe([
+        "(max-width: 768px)"
+      ]).subscribe((result: BreakpointState) => {
+        if (result.matches) {
+            
+                this.displayOff=""
+                this.displayOn="displayOff"
+               
+        } else {
+          this.displayOff="displayOff"
+          this.displayOn=""
+
+        }
+    })
   }
   
 
