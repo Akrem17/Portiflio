@@ -1,3 +1,4 @@
+<div  [ngClass]="displayOn" >
 <div class="body" style="padding-top: 200px; min-height: 1000px;">
     <div class="center ">
       
@@ -21,4 +22,33 @@
         
 
     </div>
+</div>
+</div>
+</div>
+<div  [ngClass]="displayOff" >
+
+<div class="bodyMin" >
+    <div class="centerMin ">
+      
+        <div id="block_container" style="margin-bottom: 100px;">
+            <div id="bloc1"><div class="square"></div></div>
+            <div id="bloc2"><span class="name">Projects</span></div>
+          </div>
+    
+    </div>
+<div>
+    <div class="centerMin" *ngIf="projects">
+        <div style="margin-top: 80px;" *ngFor="let project of projects">
+            <app-project-card 
+            [title]="project.title"
+            [details]="project.details"
+            [imgUrl]="project.imgUrl"
+            [position]="project.position"
+
+            ></app-project-card>
+        </div>
+        
+
+    </div>
+</div>
 </div>

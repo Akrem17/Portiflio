@@ -12,6 +12,9 @@ import { EducationCardComponent } from './education-card/education-card.componen
 import { ProjectComponent } from './project/project.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
+import { DialogComponentComponent } from './dialog-component/dialog-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,14 +26,19 @@ import {MatButtonModule} from '@angular/material/button';
     ResumeComponent,
     EducationCardComponent,
     ProjectComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    DialogComponentComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}],
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponentComponent]
 })
 export class AppModule { }

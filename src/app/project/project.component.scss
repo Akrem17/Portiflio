@@ -7,7 +7,10 @@
 
     }
 
-    
+    .displayOff{
+      display:none ;
+  }
+  
 .name{
     margin: 0px 3px 0px 3px;
     font-family: 'Poppins', sans-serif;
@@ -163,3 +166,16 @@ background-color: white;
       }
       
       
+
+      .centerMin {
+        margin: auto;
+        width: 90%;
+    
+        }
+        .bodyMin{
+          background-color: #e6dace;
+          padding-top: 30px;
+          padding-bottom: 50px;
+        }
+
+     

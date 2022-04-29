@@ -85,3 +85,39 @@
                 }
         
             }
+
+.jobMin{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.4px;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 10px;
+
+}
+.cardMin{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    
+
+}
+.detailsMin{
+    padding: 20px;
+}
+.displayOff{
+    display: none;
+}
+.square {
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px 0px 0px;
+    background-color: #0050ff;
+  }
+  #block_containerMin {
+}
+#block_containerMin > div {
+    display: inline-block;
+}
