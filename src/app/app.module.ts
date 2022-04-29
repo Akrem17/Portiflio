@@ -15,6 +15,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
 import { DialogComponentComponent } from './dialog-component/dialog-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EducationCardComponent,
     ProjectComponent,
     ProjectCardComponent,
-    DialogComponentComponent
+    DialogComponentComponent,
+    ContactComponent
     
   ],
   imports: [
