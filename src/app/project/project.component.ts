@@ -92,7 +92,7 @@ export class ProjectComponent implements OnInit {
     let p9: projects = new projects();
     p9.title = "EGovnez";
     p9.details="E-procurement system"
-    p9.imgUrl = "r";
+    p9.imgUrl = "https://i.ibb.co/QY6ymvh/Egovnez.png";
     p9.position = "Full stack developer";
     this.projects.unshift(p9);
   }
