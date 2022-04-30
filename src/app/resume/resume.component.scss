@@ -7,7 +7,18 @@
 
     }
 
-    
+  
+.button{
+  background-color: #0050ff;
+  border-radius:50px;
+  padding: 5px 30px 5px 30px;
+  color: white !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700 !important;
+  line-height: 25px;
+  letter-spacing: 1px;
+  border: 1px solid #0050ff;
+}  
 .name{
     margin: 0px 3px 0px 3px;
     font-family: 'Poppins', sans-serif;
@@ -70,6 +81,9 @@ background-color: white;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
       }
+      .button:hover{
+        background-color: #0450f2;
+      }
     .job{
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
@@ -94,8 +108,7 @@ background-color: white;
         font-weight: 800 !important;
     
         line-height: 25px;
-        color: #2966ff;
-        letter-spacing: 2px;
+        color: black !important;        letter-spacing: 2px;
     
         }
     .wrapper4{

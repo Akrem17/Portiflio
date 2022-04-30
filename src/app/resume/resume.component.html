@@ -5,13 +5,23 @@
       
         <div id="block_container" style="margin-bottom: 100px;">
             <div id="bloc1"><div class="square"></div></div>
-            <div id="bloc2"><span class="name">Resume</span></div>
+            <div id="bloc2"><span class="name" style="color: black !important;">Resume</span></div>
           </div>
     
     </div>
 <div>
+    
     <div class="center" *ngIf="educations.length>0">
-        <div style="margin-top: 80px;" *ngFor="let education of educations">
+        <div>
+            <span class="name" style="color: black !important;">Education</span>
+          
+            <span class="btn" style="float: right;">       
+                        
+                <a href="https://github.com/Akrem17/files/raw/main/SPRK_default_preset_name_custom%20%E2%80%93%201.pdf"> <button class="projects button" >Download CV (PDF)</button></a>
+            </span>
+
+        </div>
+        <div style="margin-top: 40px;" *ngFor="let education of educations">
             <app-education-card 
             [date]="education.date"
             [city]="education.city"
@@ -118,8 +128,11 @@
 </div>
 <br><br>
 <div class="center" style="text-align: center;">
-    <button mat-button>Download CV </button>
-    <button mat-button style="margin-left:'10px'" >See LinkedIn </button>
+    <a href="https://github.com/Akrem17/files/raw/main/SPRK_default_preset_name_custom%20%E2%80%93%201.pdf" ><button  class="button" mat-button>Download CV (PDF)</button> </a>
+    
+ <a target="_blank" href="https://www.linkedin.com/in/akrem-hammami/">  
+     
+    <button class="button"  mat-button style="margin-left:'10px'" >See LinkedIn </button> </a>
 
     
 </div>
@@ -128,7 +141,7 @@
 </div>
 <div  [ngClass]="displayOff" >
 
-<div class="body" style="padding-top: 100px; min-height: 1000px;">
+<div class="body" style="padding-top: 50px; min-height: 1000px;">
     <div class="centerMin">
       
         <div id="block_container" style="margin-bottom: 100px;">
@@ -155,7 +168,7 @@
 </div>
 <div class="centerMin ">
       
-    <div id="block_container" style="margin:100px 0px 100px 0px ">
+    <div id="block_container" style="margin:100px 0px 50px 0px ">
         <div id="bloc1"><div class="square"></div></div>
         <div id="bloc2"><span class="name">Work Experience</span></div>
       </div>
@@ -246,9 +259,13 @@
 </div>
 </div>
 <br><br>
+
 <div class="" style="text-align: center;">
-    <button mat-button>Download CV </button>
-    <button mat-button style="margin-left:'10px'" >See LinkedIn </button>
+    <a href="https://github.com/Akrem17/files/raw/main/SPRK_default_preset_name_custom%20%E2%80%93%201.pdf" ><button  class="button" mat-button>Download CV (PDF)</button> </a>
+    <br>    <br>
+ <a target="_blank" href="https://www.linkedin.com/in/akrem-hammami/">  
+     
+    <button class="button"  >See LinkedIn </button> </a>
 
     
 </div>
