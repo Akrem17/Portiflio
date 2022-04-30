@@ -1,19 +1,20 @@
 <div  [ngClass]="displayOn" >
 <nav class="navbar sticky" >
     <div class="logo">
+        <a routerLink="/">
         <div id="block_container">
-            <div id="bloc2"><span class="name"><p> &nbsp;Akrem Hammami</p></span><span class="job">/software egnineer</span></div>
-          </div>      
+            <div id="bloc2"><p><span class="name"> &nbsp;Akrem Hammami</span><span class="job">/software egnineer</span></p></div>
+          </div>      </a>
      <div>
     </div>
      </div>
     <ul class="nav-links">
     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    <div class="menu">
-    <li><a href="/">About me</a></li>
-    <li><a href="/resume">Resume</a></li>
-    <li><a href="/projects">Project</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <div class="menu" >
+    <li><a  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"  routerLink="/">About me</a></li>
+    <li><a  routerLinkActive="active" routerLink="/resume">Resume</a></li>
+    <li><a  routerLinkActive="active" routerLink="/projects">Project</a></li>
+    <li><a  routerLinkActive="active" routerLink="/contact">Contact</a></li>
 
     </div>
     </ul>
