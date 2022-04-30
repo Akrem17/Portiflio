@@ -2,7 +2,7 @@
 <div class="body" style="padding-top: 200px; min-height: 1000px;">
     <div class="center ">
       
-        <div id="block_container" style="margin-bottom: 100px;">
+        <div id="block_container" style="margin-bottom: 50px;">
             <div id="bloc1"><div class="square"></div></div>
             <div id="bloc2"><span class="name">Projects</span></div>
           </div>
@@ -10,6 +10,11 @@
     </div>
 <div>
     <div class="center" *ngIf="projects">
+        <div style="text-align: center;">
+          <span style="font-size: 18px;">  This is a brief about some of my projects that I built as internship, freelance, or self-training projects          
+        </span>
+
+        </div>
         <div style="margin-top: 80px;" *ngFor="let project of projects">
             <app-project-card 
             [title]="project.title"
@@ -30,11 +35,14 @@
 <div class="bodyMin" >
     <div class="centerMin ">
       
-        <div id="block_container" style="margin-bottom: 100px;">
+        <div id="block_container" style="margin-top: 50px; margin-bottom: 100px;">
             <div id="bloc1"><div class="square"></div></div>
-            <div id="bloc2"><span class="name">Projects</span></div>
+            <div id="bloc2"><span class="name" style="color: #000;">Projects</span></div>
           </div>
-    
+          <div style=" text-align: center; margin-top: -50px;" >
+          <span style="font-size: 12px;">  This is a brief about some of my projects that I built as internship, freelance, or self-training projects          
+        </span>
+    </div>
     </div>
 <div>
     <div class="centerMin" *ngIf="projects">
