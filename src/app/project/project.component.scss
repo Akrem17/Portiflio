@@ -195,3 +195,34 @@ background-color: white;
           letter-spacing: 1px;
           border: 1px solid #0050ff;
         } 
+
+
+        .shark-3 {
+          float: right;
+        
+          position: sticky;
+          bottom: 1rem;
+          align-self: flex-end;
+          margin: 0px 40px 0px 0px !important;
+        
+        }
+        
+        
+        
+        .shark-3Min {
+          float: right;
+        
+          position: sticky;
+          bottom: 1rem;
+          align-self: flex-end;
+          margin: 0px 0px 80px 0px !important;
+        
+        }
+        .shark-3:hover {
+          float: right;
+        
+          position: sticky;
+          bottom: 1rem;
+          align-self: flex-end;
+          color: #0050ff;
+        }

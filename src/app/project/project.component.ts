@@ -30,8 +30,12 @@ export class ProjectComponent implements OnInit {
         }
     })
   }
+  scroll(){
+    window. scroll(0,0);
 
+  }
   ngOnInit(): void {
+    window. scroll(0,0);
     let p1: projects = new projects();
     p1.title = "Oxygeni";
     p1.details = "Aid Tunisian people on the covid pandemic by developing a website that helps people finding oxygen concentrators or putting them for rent/free."

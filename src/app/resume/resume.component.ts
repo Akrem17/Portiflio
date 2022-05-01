@@ -74,8 +74,13 @@ export class ResumeComponent implements OnInit {
   displayOn:string="displayOn"
   displayOff:string="displayOff"
   
+  scroll(){
+    window. scroll(0,0);
 
+  }
   constructor(    private breakpointObserver: BreakpointObserver) { 
+    window. scroll(0,0);
+
       this.breakpointObserver.observe([
         "(max-width: 768px)"
       ]).subscribe((result: BreakpointState) => {

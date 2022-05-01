@@ -13,7 +13,7 @@
     <div class="menu" >
     <li><a  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"  routerLink="/">About me</a></li>
     <li><a  routerLinkActive="active" routerLink="/resume">Resume</a></li>
-    <li><a  routerLinkActive="active" routerLink="/projects">Project</a></li>
+    <li><a  routerLinkActive="active" routerLink="/projects">Projects</a></li>
     <li><a  routerLinkActive="active" routerLink="/contact">Contact</a></li>
 
     </div>
@@ -23,12 +23,13 @@
 <div [ngClass]="displayOff" >
     <nav class="navbarMin" >
         <div class="logo">
+            <a routerLink="/">
             <div id="block_containerMin">
                 <div id="bloc1"><div class="square"></div></div>
                 <div id="bloc2"><span class="nameMin">Akrem Hammami</span></div><br>
                 <div id="bloc2"><span class="jobMin">software egnineer</span></div>
             </div>
-            
+        </a>
          <div>
         </div>
          </div>
@@ -38,7 +39,7 @@
         <div class="menu menuMin" >
         <li><a href="/">About me</a></li>
         <li><a href="/resume">Resume</a></li>
-        <li><a href="/projects">Project</a></li>
+        <li><a href="/projects">Projects</a></li>
         <li><a href="/contact">Contact</a></li>
         </div>
         </ul>
